@@ -1,0 +1,51 @@
+---
+title: "Data Science Intro"
+author: "Brock Akerman"
+format: html
+editor: visual
+---
+
+
+## Mock Test Questions
+
+(@) **What do you think being a data scientist is about?**
+
+A data scientist is a person whose seeks to use data to derive insights, discover trends, and explore data in a way that produces value to stakeholders--whether that drives change in governmental or private sector policy, leads credence to existing research or simply discovers new insights on its own.
+
+(@) **What differences/similarities do you see between data scientists and statisticians?**
+
+Similarities: Both analyse data to achieve their mandates.  Both use some degree of quantitative reason to complete their work. 
+
+Differences:  Statisticians are more concerned with using mathematical modeling to identify relationships between variables.  Data Scientists are concerned with answering business questions.  Statisticians work with smaller data to draw inference.  Data Scientists wrangle with big data, and a wider variety of data types.  Data Scientists' work often involves some element of engineering and familiarity with the business database structures to navigate data and answer specific business questions.  
+
+(@) **How do you view yourself in relation to these two areas?**
+
+My current full-time job is closer to data scientist than statistics.  While I enjoy the investigative nature of both, I would align my interests with statisticians more since they function in the realm of science and research instead of business-related questions.  I feel reward most when I am trusted to speak as an authority on a subject in a public speaking forum; where I can perform research, present my discoveries and back them up empirically; and have a produced work (published paper, journal entry, etc) that either educates or drives policy.  
+
+
+## R Code Demo
+
+
+Assigning to the variable y density values of the Sepal.Length column from the built-in dataset 'iris'.
+```{r}
+y <- density(iris$Sepal.Length)
+```
+
+
+Next; check the class, type and structure of y.
+```{r}
+#Class
+class(y)
+
+#Type
+typeof(y)
+
+#Structure
+str(y)
+```
+
+
+Plot y by wrapping it inside of a plot function.  
+```{r, echo=FALSE, eval=TRUE}
+plot(y)
+```
